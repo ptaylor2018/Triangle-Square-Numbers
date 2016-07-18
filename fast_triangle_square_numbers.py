@@ -14,7 +14,7 @@ start_time=time.time()
 
 def leap_frog(start_val):
     restart_val= sqrt(start_val) # this takes the starting value in the list of triangle squares and gives its square root counter part, which is used to determine bottom_range
-    bottom_range= int(round(restart_val*(5.82842712474619)))
+    bottom_range= int(round(restart_val*(5.82842712474619)))# its more like a Range_bottom than bottom_range :/
     while(True):
         poss_tri= bottom_range**2 #this makes the bottom_range a square number, fulfilling criterion 1
         test = poss_tri*8 +1 # this(with the next line) checks if poss_tri is in fact a triangle number. if test is a perfect square, it is!
