@@ -35,3 +35,9 @@ print "Square Places"
 print square_places
 print"Triangle Places"
 print triangle_places
+quotients = [((square_places[i+1]*1.0)/(square_places[i]*1.0)) for i in range(len(square_places)-1)]
+print "square places quotients"
+print quotients
+diffs = [quotients[i]-quotients[i+1] for i in range(len(quotients)-1)]
+print "differences of quotients"
+print diffs
