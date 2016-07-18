@@ -18,7 +18,7 @@ def leap_frog(start_val):
     while(True):
         poss_tri= bottom_range**2 #this makes the bottom_range a square number, fulfilling criterion 1
         test = poss_tri*8 +1 # this(with the next line) checks if poss_tri is in fact a triangle number. if test is a perfect square, it is!
-        if (sqrt(Decimal(test)))% 1 ==0: # so I wanted to make this an integer sqrt test so I could go above 200, but isqrt is way slower than sqrt.
+        if (sqrt(Decimal(test)))% 1 ==0: # so I wanted to make this an integer sqrt test so I could go above 200, but isqrt is way slower than sqrt. Amd Decimal isn't working either.
             return poss_tri
         else:
             bottom_range+=1 # if the value tested isn't correct, it adds one and tries again.
